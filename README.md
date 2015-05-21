@@ -1,3 +1,7 @@
+# Slug behavior for Meteor Astronomy
+
+The `slug` behavior adds a slug field for storing URL friendly value of a choosen field. The slug field can be used in the routing `http://localhost:3000/post/to-jest-test-polskich-znakow-aszclonz`.
+
 ```js
 Post.addBehavior('slug', {
   fieldName: 'title',
