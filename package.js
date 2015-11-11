@@ -1,8 +1,8 @@
 Package.describe({
   summary: 'Slug behavior for Meteor Astronomy',
-  version: '1.2.0',
-  name: 'jagi:astronomy-slug-behavior',
-  git: 'https://github.com/jagi/meteor-astronomy-slug-behavior.git'
+  version: '1.2.1',
+  name: 'zvictor:astronomy-slug-behavior',
+  git: 'https://github.com/zvictor/meteor-astronomy-slug-behavior.git'
 });
 
 Package.onUse(function(api) {
