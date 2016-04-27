@@ -1,18 +1,22 @@
 Package.describe({
-  summary: 'Slug behavior for Meteor Astronomy',
-  version: '1.3.1',
   name: 'jagi:astronomy-slug-behavior',
+  version: '2.0.0-rc.1',
+  summary: 'Slug behavior for Meteor Astronomy',
   git: 'https://github.com/jagi/meteor-astronomy-slug-behavior.git'
 });
 
+Npm.depends({
+  lodash: '4.11.1'
+});
+
 Package.onUse(function(api) {
-  api.versionsFrom('1.1.0.2');
+  api.versionsFrom('1.3');
 
-  api.use('jagi:astronomy@1.2.0');
-  api.use('underscore');
+  api.use([
+    'ecmascript',
+    'es5-shim',
+    'jagi:astronomy@2.0.0-rc.9'
+  ], ['client', 'server']);
 
-  // Behavior.
-  api.addFiles('lib/behavior/events.js', ['client', 'server']);
-  api.addFiles('lib/behavior/methods.js', ['client', 'server']);
-  api.addFiles('lib/behavior/behavior.js', ['client', 'server']);
+  api.mainModule('lib/main.js', ['client', 'server']);
 });
