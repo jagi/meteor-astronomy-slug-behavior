@@ -1,6 +1,6 @@
 Package.describe({
   name: 'jagi:astronomy-slug-behavior',
-  version: '2.0.0-rc.1',
+  version: '2.0.0',
   summary: 'Slug behavior for Meteor Astronomy',
   git: 'https://github.com/jagi/meteor-astronomy-slug-behavior.git'
 });
@@ -15,7 +15,7 @@ Package.onUse(function(api) {
   api.use([
     'ecmascript',
     'es5-shim',
-    'jagi:astronomy@2.0.0-rc.9'
+    'jagi:astronomy@2.0.0'
   ], ['client', 'server']);
 
   api.mainModule('lib/main.js', ['client', 'server']);
